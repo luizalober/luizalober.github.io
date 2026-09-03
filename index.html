@@ -100,36 +100,6 @@
             </div>
         </section>
 
-        <section class="resume-section" id="projects">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Projects & Presentations</h2>
-                <ul class="fa-ul mb-0">
-
-                {% for project in site.data.projects %}
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">{{ project.title }}</h3>
-                        {% if project.subtitle != "" %}
-                        <div class="subheading mb-1">{{ project.subtitle }}</div>
-                        {% endif %}
-                        <div>
-                            <button type="button" class="collapsible">{{ project.type }}</button>
-                            <div class="content">
-                                <p>{{ project.content }}</p>
-                            </div>
-                            {% for link in project.links %}
-                            <a href="{{ link.url }}">{{ link.text }}</a>
-                            {% endfor %}
-                        </div>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">{{ project.date }}</span></div>
-                </div>
-                {% endfor %}
-
-                </ul>
-            </div>
-        </section>
-
         <section class="resume-section" id="education">
             <div class="resume-section-content">
                 <h2 class="mb-5">Education</h2>
