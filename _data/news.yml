@@ -1,0 +1,11 @@
+- date: "2025-08-29"
+  title: "New publication: Discovering equations from data: symbolic regression in dynamical systems"
+  content: "We present a historical discussion and benchmark the state-of-the-art algorithms tackling how symbolic regression can be used to infer the governing equations of several dynamic systems automatically, and still benefit from in-domain knowledge."
+  link: "https://bsky.app/profile/franciscorodrigues.bsky.social/post/3lxkt6m3e6c2f"
+  type: "bluesky"
+
+- date: "2024-11-29"
+  title: "New publication: Predictive Non-linear Dynamics via Neural Networks and Recurrence Plots"
+  content: "Is it possible to predict chaotic dynamics? In this new paper, we use recurrence plots to train convolutional neural networks with the task of estimating the defining control parameters of non-linear systems."
+  link: "https://bsky.app/profile/franciscorodrigues.bsky.social/post/3lc3vjwvqks22"
+  type: "bluesky"

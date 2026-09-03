@@ -1,0 +1,19 @@
+- title: "Conference on Complex Systems 2023"
+  subtitle: "(PT-BR) Extracting the governing equations of epidemics through sparse regression"
+  date: "Oct. 2023"
+  type: "Description"
+  content: "In this work, our proposal is to extract the governing equations describing the time evolution of a given population where an epidemic spreading occurs, and for that end we employ a sparse regression model known as Sparse Identification of Nonlinear Dynamical Systems (SINDy). The equations resulting from such approach can then be used to make predictions about the future states of that group. The main advantage of SINDy is its interpretability, given its capabilities of recovering the equations from the system's dynamics through a simple regression framework; and through them one can also acquire more information on the properties of such system."
+  links:
+    - text: "Certificate of participation, "
+      url: "https://github.com/luizalober/portfolio/raw/main/assets/files/certificates/certificado-participacao-ccs2023.pdf"
+    - text: "and of presentation."
+      url: "https://github.com/luizalober/portfolio/raw/main/assets/files/certificates/certificado-apresentacao-ccs2023.pdf"
+
+- title: "School on Nonlinear Dynamics, Complex Networks, Information Theory and Machine Learning in Neuroscience"
+  subtitle: ""
+  date: "May. 2023"
+  type: "Description"
+  content: "A one week workshop organized by ICTP-SAIFR on São Paulo, focused on. From the <a href='https://www.ictp-saifr.org/nld2023/'> official website</a>: This school for PhD students and young postdocs will focus on five main areas: nonlinear dynamics, complex networks, data analysis, information theory and machine learning. The school will cover fundamental and applied aspects such as excitability and neuronal dynamics, neural coding, entropy and complexity measures, machine learning and data analysis methods for inferring functional connectivity, methods for characterizing functional networks, etc."
+  links:
+    - text: "Certificate of participation."
+      url: "https://github.com/luizalober/portfolio/raw/main/assets/files/certificates/schoolneuroscience.pdf"

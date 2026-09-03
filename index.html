@@ -1,0 +1,258 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <meta property="og:image" content="assets/img/desktop.png" >
+
+
+        <title>Luiza Lober(Portfolio)</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/icon.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/resume.min.css" rel="stylesheet">
+
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Luiza Lober</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile mx-auto mb-4" src="assets/img/profile.jpg"  alt="..."  /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects & Presentations</a></li> -->
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li> -->
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#news">News</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">Luiza
+                        <span class="text-primary">Lober</span>
+                    </h1>
+                    <div class="subheading mb-0">
+                        <h3 class="mb-0">
+                            Postdoc researcher | USP <br><br>
+                        </h3>
+
+                    </div>
+                    <p class="lead mb-5">
+                        I am currently working on <b>modeling nonlinear dynamical systems</b> at the Institute of Mathematical and Computational Sciences (USP), where I also completed my Ph.D. in computer science and computational mathematics. My current research interests are <b>epidemic forecasting, network reconstruction, chaotic dynamics</b>, and related machine learning techniques, such as <b>symbolic regression</b>.
+                    </p>
+                    <div class="social-icons">
+						<a href="http://lattes.cnpq.br/8784246142979809"><i class="fa-solid fa-id-card"></i></a>
+						<a href="https://orcid.org/0000-0003-1726-4152"><i class="fa-brands fa-orcid"></i></a>
+                        <a href="https://www.linkedin.com/in/luizalober/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/luizalober/"><i class="fab fa-github"></i></a>
+						<a href="https://scholar.google.com.br/citations?view_op=list_works&hl=pt-BR&authuser=3&user=IzKOyzIAAAAJ"><i class="fa-solid fa-graduation-cap"></i></a>
+						<a href="https://github.com/luizalober/portfolio/raw/main/assets/files/CV-LL.pdf"><i class="fa-solid fa-download"></i></a>
+					</div>
+                </div>
+            </section>
+            <hr class="m-0" />
+        </div>
+
+        <section class="resume-section" id="publications">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Publications</h2>
+                <ul class="fa-ul mb-0">
+                    {% for pub in site.data.publications %}
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">{{ pub.title }}</h3>
+                            <div class="subheading mb-1">{{ pub.authors }}</div>
+                            <div>
+                                <button type="button" class="collapsible">Abstract</button>
+                                <div class="content">
+                                    <p>{{ pub.abstract }}</p>
+                                </div>
+                                {% for link in pub.links %}
+                                <a href="{{ link.url }}">{{ link.text }}</a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">{{ pub.date }}</span></div>
+                    </div>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+
+        <section class="resume-section" id="projects">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Projects & Presentations</h2>
+                <ul class="fa-ul mb-0">
+
+                {% for project in site.data.projects %}
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">{{ project.title }}</h3>
+                        {% if project.subtitle != "" %}
+                        <div class="subheading mb-1">{{ project.subtitle }}</div>
+                        {% endif %}
+                        <div>
+                            <button type="button" class="collapsible">{{ project.type }}</button>
+                            <div class="content">
+                                <p>{{ project.content }}</p>
+                            </div>
+                            {% for link in project.links %}
+                            <a href="{{ link.url }}">{{ link.text }}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">{{ project.date }}</span></div>
+                </div>
+                {% endfor %}
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Education</h2>
+                {% for edu in site.data.education %}
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">{{ edu.institution }}</h3>
+                        <div class="subheading mb-1">{{ edu.degree }}</div>
+                        {% if edu.description %}<div>{{ edu.description }}</div>{% endif %}
+                        {% if edu.link_url %}
+                        <a href="{{ edu.link_url }}">{{ edu.link_text }}</a>
+                        {% endif %}
+                        {% if edu.gpa %}<p>{{ edu.gpa }}</p>{% endif %}
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">{{ edu.date }}</span></div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+
+        <section class="resume-section" id="experience">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Other experience</h2>
+                {% for exp in site.data.experience %}
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">{{ exp.title }}</h3>
+                        <div class="subheading mb-3">{{ exp.subtitle }}</div>
+                        <p>
+                            {% for bullet in exp.bullets %}
+                            ▪ <b>{{ bullet | split: ":" | first }}</b>: {{ bullet | split: ":" | last }}<br>
+                            {% endfor %}
+                        </p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <!--<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+            <div class="w-100">
+                <h2 class="mb-5">Skills</h2>
+                <div class="subheading mb-3">Programming tools</div>
+                <ul class="list-inline dev-icons">
+					<li class="list-inline-item"><i class="fa-brands fa-python"></i></li>
+                    <li class="list-inline-item"><i class="fa-solid fa-c"></i><i class="fa-solid fa-plus"></i><i class="fa-solid fa-plus"></i></li>
+					<li class="list-inline-item"><i class="fa-solid fa-r"></i></li>
+                    <li class="list-inline-item"><i class="fa-brands fa-html5"></i></li>
+                </ul>
+                <div class="subheading mb-3">Workflow</div>
+                <ul class="fa-ul mb-4">
+                    <li>
+                        <i class="fa-li fa fa-check"></i>
+                        <b> Machine Learning Knowledge:</b>
+						Sparse regression algorithms, PINNs, Random Forests, GCNs.
+                    </li>
+                    <li>
+                        <i class="fa-li fa fa-check"></i>
+                        <b>Code packages:</b>
+						ROOT, LaTeX, Microsoft Office, Libre Office, Jupyter Notebook, Git, SSH, Matplotlib, Numpy, Scipy, Scikit Learn, TensorFlow and Pandas.
+                    </li>
+				</ul>
+        </section>-->
+
+
+        <section class="resume-section" id="certifications">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Awards</h2>
+                <ul class="fa-ul mb-0">
+                    {% for award in site.data.awards %}
+                    <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        <a href="{{ award.link }}">{{ award.text }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+
+        <section class="resume-section" id="news">
+            <div class="resume-section-content">
+                <h2 class="mb-5">News</h2>
+                {% for item in site.data.news %}
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                    <div class="flex-grow-1">
+                        <h4 class="mb-1">{{ item.title }}</h4>
+                        <p class="mb-2">{{ item.content }}</p>
+                        {% if item.link %}
+                        <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">
+                            {% if item.type == "bluesky" %}
+                                <i class="fa-brands fa-bluesky"></i> View Bluesky Post
+                            {% else %}
+                                Read More &rarr;
+                            {% endif %}
+                        </a>
+                        {% endif %}
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">{{ item.date }}</span></div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+		<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+		  coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){
+			  content.style.maxHeight = null;
+			} else {
+			  content.style.maxHeight = content.scrollHeight + "px";
+			}
+		  });
+		}
+		</script>
+    </body>
+</html>

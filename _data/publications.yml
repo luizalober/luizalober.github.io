@@ -1,0 +1,35 @@
+- title: "Neural networks for dengue forecasting: a systematic review"
+  authors: "Luiza Lober, Kirstin O. Roster, Francisco A. Rodrigues"
+  date: "Oct. 2025"
+  abstract: "Early forecasts of dengue are an important tool for disease mitigation. Neural networks are powerful predictive models that have made contributions to many areas of public health. In this study, we reviewed the application of neural networks in the dengue forecasting literature, with the objective of informing model design for future work. Following PRISMA guidelines, we conducted a systematic search of studies that use neural networks to forecast dengue in human populations. We summarized the relative performance of neural networks and comparator models, architectures and hyper-parameters, choices of input features, geographic spread, and model transparency. Sixty two papers were included. Most studies implemented shallow feed-forward neural networks, using historical dengue incidence and climate variables. Prediction horizons varied greatly, as did the model selection and evaluation approach. Building on the strengths of neural networks, most studies used granular observations at the city level, or on its subdivisions, while also commonly employing weekly data. Performance of neural networks relative to comparators, such as tree-based supervised models, varied across study contexts, and we found that 63% of all studies do include at least one such model as a baseline, and in those cases about half of the studies report neural networks as the best performing model. The studies suggest that neural networks can provide competitive forecasts for dengue, and can reliably be included in the set of candidate models for future dengue prediction efforts. The use of deep networks is relatively unexplored but offers promising avenues for further research, as does the use of a broader set of input features and prediction in light of structural changes in the data generation mechanism."
+  links:
+    - url: "https://www.medrxiv.org/content/10.1101/2025.10.14.25338016v1"
+      text: "pre-print: ArXiv"
+
+- title: "Integrating socioeconomic and geographic data to enhance infectious disease prediction in Brazilian cities"
+  authors: "Luiza Lober, Kirstin O. Roster, Francisco A. Rodrigues"
+  date: "Sep. 2025"
+  abstract: "Supervised machine learning models and public surveillance data has been employed for infectious disease forecasting in many settings. These models leverage various data sources capturing drivers of disease spread, such as climate conditions or human behavior. However, few models have incorporated the organizational structure of different geographic locations for forecasting. Traveling waves of seasonal outbreaks have been reported for dengue, influenza, and other infectious diseases, and many of the drivers of infectious disease dynamics may be shared across different cities, either due to their geographic or socioeconomic proximity. In this study, we developed a machine learning model to predict case counts of four infectious diseases across Brazilian cities one week ahead by incorporating information from related cities. We compared selecting related cities using both geographic distance and GDP per capita. Incorporating information from geographically proximate cities improved predictive performance for two of the four diseases, specifically COVID-19 and Zika. We also discuss the impact on forecasts in the presence of anomalous contagion patterns and the limitations of the proposed methodology."
+  links:
+    - text: "Published @Chaos, Solitons and Fractals (closed access)."
+      url: "https://doi.org/10.1016/j.chaos.2024.115417"
+    - text: "ArXiv pre-print"
+      url: "https://arxiv.org/abs/2405.01422"
+
+- title: "Discovering equations from data: symbolic regression in dynamical systems"
+  authors: "Beatriz Brum, Luiza Lober, Isolde Previdelli,Francisco A. Rodrigues"
+  date: "Aug 2025"
+  abstract: ""
+  links:
+    - url: "https://doi.org/10.1088/2632-072X/ae3eed"
+      text: "Published @Journal of Physics: Complexity (open access)"
+
+- title: "Parameter inference in nonlinear dynamical systems via recurrence plots and convolutional neural networks"
+  authors: "Luiza Lober, Matheus. S. Palmero, Francisco A. Rodrigues"
+  date: "Jul 2025"
+  abstract: "Inferring control parameters in nonlinear dynamical systems is an important task in analyzing general dynamical behaviors, particularly in the presence of inherently deterministic chaos. Traditional approaches often rely on system-specific models and involve heavily parametrized formulations, which can limit their general applicability. In this study, we present a methodology that employs recurrence plots as structured representations of nonlinear trajectories, which are then used to train convolutional neural networks to infer the values of the control parameter associated with the analyzed trajectories. We focus on two representative nonlinear systems, namely, the logistic map and the standard map, and show that our approach enables accurate estimation of the parameters governing their dynamics. When compared to regression models trained directly on raw time-series data, the use of recurrence plots yields significantly more robust results. Although the methodology does not aim to predict future states explicitly, we argue that accurate parameter inference, when combined with predetermined initial conditions, enables the reconstruction of a system’s evolution due to its deterministic nature. These findings highlight the potential of recurrence-based learning frameworks for the automated identification and characterization of nonlinear dynamical behaviors."
+  links:
+    - text: "Published @Physical Review E (closed access)."
+      url: "https://doi.org/10.1103/wz7j-lzvs"
+    - text: "ArXiv pre-print"
+      url: "https://arxiv.org/abs/2410.23408"
