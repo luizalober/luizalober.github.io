@@ -61,6 +61,9 @@
                     <p class="lead mb-5">
                         I am currently working on <b>modeling nonlinear dynamical systems</b> at the Institute of Mathematical and Computational Sciences (USP), where I also completed my Ph.D. in computer science and computational mathematics. My current research interests are <b>epidemic forecasting, network reconstruction, chaotic dynamics</b>, and related machine learning techniques, such as <b>symbolic regression</b>.
                     </p>
+                    <p class="lead mb-5">
+                        <b>Other names:</b> Luiza L. S. Piva, L. Piva, L. Lober
+                    </p>
                     <div class="social-icons">
 						<a href="http://lattes.cnpq.br/8784246142979809"><i class="fa-solid fa-id-card"></i></a>
 						<a href="https://orcid.org/0000-0003-1726-4152"><i class="fa-brands fa-orcid"></i></a>
@@ -96,6 +99,36 @@
                         <div class="flex-shrink-0"><span class="text-primary">{{ pub.date }}</span></div>
                     </div>
                     {% endfor %}
+                </ul>
+            </div>
+        </section>
+
+        <section class="resume-section" id="projects">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Projects & Presentations</h2>
+                <ul class="fa-ul mb-0">
+
+                {% for project in site.data.projects %}
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">{{ project.title }}</h3>
+                        {% if project.subtitle != "" %}
+                        <div class="subheading mb-1">{{ project.subtitle }}</div>
+                        {% endif %}
+                        <div>
+                            <button type="button" class="collapsible">{{ project.type }}</button>
+                            <div class="content">
+                                <p>{{ project.content }}</p>
+                            </div>
+                            {% for link in project.links %}
+                            <a href="{{ link.url }}">{{ link.text }}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">{{ project.date }}</span></div>
+                </div>
+                {% endfor %}
+
                 </ul>
             </div>
         </section>
