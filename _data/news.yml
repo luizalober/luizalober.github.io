@@ -1,3 +1,9 @@
+- date: "2026-11-18"
+  title: "New publication: Network sampling: a compartive review"
+  content: "Can a network sample preserve what we need to know about the whole network? For large networks, observing every connection may be impractical. Sampling allows us to study a smaller portion of the structure, but raises a key question: how does the sampling method affect our conclusions about the original network? In our new paper, “Network sampling: a comparative review,” we compare sampling methods on synthetic and real-world networks, combining network measures, multivariate statistical analysis, and machine learning. Our findings highlight why choosing a sampling strategy is an integral part of network analysis: it influences which structural features we recover and how we interpret the data."
+  link: "https://www.linkedin.com/feed/update/urn:li:activity:7528472294046982144/"
+  type: "linkedin"
+
 - date: "2025-08-29"
   title: "New publication: Discovering equations from data: symbolic regression in dynamical systems"
   content: "We present a historical discussion and benchmark the state-of-the-art algorithms tackling how symbolic regression can be used to infer the governing equations of several dynamic systems automatically, and still benefit from in-domain knowledge."
